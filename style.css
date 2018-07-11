@@ -21,9 +21,10 @@ header {
   color: white;
   transition: all 0.7s ease-in-out;
   height: 12vh;
+  z-index: 2;
 }
 header:hover {
-  background-color: rgba(34, 36, 38, 0.85);
+  background-color: rgba(34, 36, 38, 0.95);
 }
 header h1 {
   font-family: 'Yellowtail', cursive;
@@ -47,6 +48,7 @@ header button:hover {
 #top header .hamburger {
   outline: none;
   padding: 4vh 2rem;
+  z-index: 2;
 }
 
 #top .greet span#roles {
@@ -71,11 +73,12 @@ header button:hover {
 }
 
 .menu {
-  height: 88vh;
+  z-index: 1;
+  height: 100vh;
   padding-top: 15vh;
-  background-color: rgba(34, 36, 38, 0.85);
+  background-color: rgba(34, 36, 38, 0.95);
   position: absolute;
-  top: 12vh;
+  top: 0vh;
   width: 100%;
   text-align: center;
   font-family: 'Oswald', sans-serif;
